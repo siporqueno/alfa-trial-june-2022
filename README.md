@@ -1,1 +1,23 @@
-# alfa-trial-june-2022
+## [Формулировка задачи](https://github.com/siporqueno/alfa-trial-june-2022)
+
+## Для запуска приложения вам понадобится:
+- [JDK 11](https://www.oracle.com/java/technologies/downloads/#java11) или выше
+- [Gradle](https://docs.gradle.org/current/userguide/installation.html)
+- [Git](https://git-scm.com/)
+## Инструкция по запуску:
+- Загрузите приложение с помощью команды git clone https://github.com/siporqueno/alfa-trial-june-2022.git
+- Зарегистрируйтесь на https://docs.openexchangerates.org/ и получите app_id
+- Зарегистрируйтесь на https://giphy.com/ и получите api_key
+- Установите app_id и api_key в файле application.yml
+- Перепроверьте url и конечные точки для historical для latest курсов на https://docs.openexchangerates.org/ и при необходимости внесите изменения в application.yml
+- Перепроверьте url на https://developers.giphy.com/docs/api/endpoint#random и при необходимости внесите изменения в application.yml
+- Запустите приложение с помощью команды ./gradlew bootRun в командной строке
+## Как пользоваться приложением:
+Приложение выводит два характерных вида гифок. Каждый вид соответствует одному из двух следующих вариантов:
+- Крайний курс выбранной вами валюты по отношению к доллару США на сегодня вырос или не изменился по сравнению с вчерашним курсом
+- Крайний курс выбранной вами валюты по отношению к доллару США на сегодня упал по сравнению с вчерашним курсом
+
+Выберите трехбуквенный код любой валюты согласно ISO 4217 (например EUR - евро, INR - индийская рупия, RUB - рубль)  
+Обозначим выбранный вами код как currency_code  
+Перейдите по ссылке: http://localhost:8080/api/v1/currency-change/currency_code  
+Например, для евро (EUR) ссылка будет такой: http://localhost:8080/api/v1/currency-change/EUR
