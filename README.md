@@ -1,4 +1,4 @@
-## [Формулировка задачи](https://github.com/siporqueno/alfa-trial-june-2022)
+## [Формулировка задачи](Task.md)
 
 ## Для запуска приложения вам понадобится:
 - [JDK 11](https://www.oracle.com/java/technologies/downloads/#java11) или выше

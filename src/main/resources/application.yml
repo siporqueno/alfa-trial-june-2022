@@ -1,9 +1,9 @@
 properties:
   rates:
-    app_id: ff79140f9f254e5ebecebfd84acd0cd1
+    app_id:
     url: https://openexchangerates.org/api
     historical_endpoint: historical
     latest_endpoint: latest.json
   gifs:
-    api_key: TRFwyOm0q3tPIJrnZVuH1fWOf6gOGcWV
+    api_key:
     url: api.giphy.com/v1/gifs/random
