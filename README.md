@@ -21,3 +21,7 @@
 Обозначим выбранный вами код как currency_code  
 Перейдите по ссылке: http://localhost:8080/api/v1/currency-change/currency_code  
 Например, для евро (EUR) ссылка будет такой: http://localhost:8080/api/v1/currency-change/EUR
+## Инструкция по сборке и запуску в Docker:
+Сначала собрать .jar с помощью gradle build  
+docker build --build-arg JAR_FILE=build/libs/*.jar -t niko/alfa-trial-june-2022 .  
+docker run -p 8080:8080 -e properties.rates.app_id=<app_id_value> -e properties.gifs.api_key=<api_key_value> <IMAGE ID>  
